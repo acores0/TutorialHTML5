@@ -1,0 +1,257 @@
+/* Estilos base */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 20px 0px 0px 0px;
+	padding: 0;
+	background: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #3C3D3F;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2.8em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+} 
+
+/*Header:
+	para header no aplicamos estilos*/
+	/* Cabecera: 
+		cabecera engloba el título y el menú. No es el header*/
+	header{
+		height: 10rem;
+	}
+	
+	/*la mejor forma de hacer columnas (colocar elementos uno al lado de otro) colocar uno a la derecha o a la izquierda y 
+	agrupar los otros dos para colocar este bloque (columna) al lado opuesto del otro elemento. Dentro del bloque que contiene dos 
+	elementos los colocamos los dos para el mismo lado*/
+
+	#cabecera{
+		/*Ancho: 85%*/
+		width: 85%;
+
+		/*Ancho máximo: 1200px y ancho mínimo: 600px*/
+		max-width: 1200px;
+		min-width: 600px;
+
+		/*Alto: 50px*/
+		height: 50px;
+
+		/*Margen: arriba: 0 derecha: auto abajo: 20px izquierda: auto*/
+		margin: 0 auto 20px auto;
+		float: right;
+	}
+
+	/* logo */
+	header figure{
+		/*Ancho: 150px*/
+		width: 150px;
+		text-align: center;
+		float: left;
+	}	
+
+	#cabecera h1{
+		float: left;
+
+		/*Ancho: 30%*/
+		width: 30%;
+	}
+
+
+	/* Menu */
+	#menu{
+		float: right;
+
+		/*Ancho: 700px*/
+		width: 70%;
+		padding-right: 5rem;
+	}
+
+	#menu li{
+		/*Li posicionados a la izquierda*/
+		text-align: left;
+		list-style: none;
+		display: inline-block;
+	}
+
+	#menu a {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+		color: #0C0C0C;
+		/*Enlace posicionado a la izquierda*/
+
+		/*Alto: 37px*/
+		height: 37px;
+
+		/*Separación: arriba: 13px derecha e izquierda: 30px y abajo: 0*/
+		margin: 13px 20px 0;
+		padding: 5px 10px;
+	}
+
+	#menu .current_page_item a {
+		background: #EB1D1D;
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+
+
+
+/* Pagina */
+
+/* menú lateral */
+#menu_lateral{
+	/*Ancho: 20%*/
+	width: 20%;
+
+	/*Tamaño letra: 1.4em*/
+	font-size: 1.4em;
+
+	float: left;
+}
+
+#menu_lateral ul{
+	/*Quitar viñetas a las listas*/
+	list-style: none;
+}
+
+
+/*Contenido de la página web*/
+main{
+	/*Ancho: 90%*/
+	width: 90%;
+	height: 93rem;
+	margin: 0 auto;
+}
+
+/*Contenedor*/
+#contenedor{
+	float:left;
+	width: 80%;
+}
+
+	/* contenido */
+	#contenido{
+		/*Ancho: 50%*/
+		width: 50%;
+
+		/*Centrado*/
+		margin: 0 auto;
+
+		/*Justificar contenido*/
+		text-align: justify;
+	}
+
+	#contenido article{
+		/*Cada sección separada 30px*/
+		margin-bottom: 30px;
+	}
+
+	#contenido article figure img{
+		/*Imagen centrada*/
+		display: block;
+		margin: 0 auto;
+	}
+
+	.arriba{
+		text-align: right;
+		border-bottom: solid 1px black;
+		padding-top: 30px;
+	}
+
+	#contenido article:last-child .arriba{
+		border: none;
+	}
+
+
+/* lateral-dch */
+#lateral_dch{
+	/*Ancho: 20%*/
+	width: 20%;
+	float: right;
+}
+
+#lateral_dch section{
+	margin: 1rem 0;
+}
+
+#lateral_dch section:first-child{
+	margin-top: 0;
+}
+
+#lateral_dch h2 {
+	letter-spacing: -2px;
+	/*Tamaño de los h2: 1.4em*/
+	font-size: 1.4em;
+	color: #414141;
+}
+
+#lateral_dch ul{
+	list-style: none;
+	margin-left: 1rem;
+}
+
+#lateral-dch li{
+	list-style: none;
+}
+
+
+/* buscar */
+#buscar{
+	/*Ancho: 280px y alto: 40px*/
+	width: 280px;
+	height: 40px;
+
+	/*Posicionado a la derecha*/
+	float: left;
+}
+
+
+.negrita{
+	font-weight: bold;
+}
+
+
+
+/* Footer */
+footer {
+	border-top: 1px solid #BBBBBB;
+	font-family: Arial, Helvetica, sans-serif;
+
+	/*Ancho: 60%*/
+	width: 60%;
+
+	/*Alto: 50px*/
+	height: 50px;
+
+	/*Ancho máximo 1000px*/
+    max-width: 1000px;
+
+	margin: 0 auto;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tutorial de HTML5</title>
+  </head>
+  <body>
+    <header>
+      <figure>
+        <img src="imagenes/HTML5.png" alt="Logo de HTML5" />
+      </figure>
+
+      <section id="cabecera">
+        <h1>Tutorial de HTML5</h1>
+        <nav id="menu">
+          <ul>
+            <li class="current_page_item"><a href="index.html">Inicio</a></li>
+            <li><a href="#">Semántica</a></li>
+            <li><a href="#">Listas</a></li>
+            <li><a href="#">Formularios</a></li>
+            <li><a href="#">Imágenes</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <div id="contenedor">
+        <aside id="menu_lateral">
+        <nav>
+          <ul>
+            <li><a href="#">¿Qué es HTML?</a></li>
+            <li><a href="#">Historia del HTML</a></li>
+            <li><a href="#">La estructura de HTML 5</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <section id="contenido" role="main">
+        <article>
+          <h2>¿Qué es HTML?</h2>
+          <p>
+            <span class="negrita">HTML</span> (por sus siglas en inglés,
+            HyperText Markup Language), <span class="negrita">es un lenguaje de marcado que nos permite hacer la estructura de una página web.</span>Tenemos que aclarar que HTML no es un lenguaje de programación, pues carece de mecanimos para ejecutar cálculos, repeticiones o condiciones, lo que si es, es un lenguaje de marcado. Es un lenguaje que le indica al navegador web qué tipo de elemento es el que está en la estructura de una página web. </p>
+        </article>
+
+        <article>
+          <h2>Historia del HTML</h2>
+          <p>
+            La historia completa de HTML es tan interesante como larga, por lo
+            que a continuación se muestra su historia resumida a partir de la
+            información que se puede encontrar en la Wikipedia.
+          </p>
+
+          <p>
+            El origen de HTML se remonta a 1980, cuando el físico
+            <span class="negrita">Tim Berners-Lee</span>, trabajador del
+            <span class="enlace">CERN</span> (Organización Europea para la
+            Investigación Nuclear) propuso un nuevo sistema de "hipertexto" para
+            compartir documentos.
+          </p>
+
+          <p>
+            Los sistemas de "hipertexto" habían sido desarrollados años antes.
+            En el ámbito de la informática, el "hipertexto" permitía que los
+            usuarios accedieran a la información relacionada con los documentos
+            electrónicos que estaban visualizando. De cierta manera, los
+            primitivos sistemas de "hipertexto" podrían asimilarse a los enlaces
+            de las páginas web actuales.
+          </p>
+
+          <p>
+            Tras finalizar el desarrollo de su sistema de "hipertexto", Tim
+            Berners-Lee lo presentó a una convocatoria organizada para
+            desarrollar un sistema de "hipertexto" para Internet. Después de
+            unir sus fuerzas con el ingeniero de sistemas
+            <span class="negrita">Robert Cailliau</span>, presentaron la
+            propuesta ganadora llamada WorldWideWeb (W3).
+          </p>
+
+          <p>
+            El primer documento formal con la descripción de HTML se publicó en
+            1991 bajo el nombre HTML Tags (Etiquetas HTML) y todavía hoy puede
+            ser consultado online a modo de reliquia informática.
+          </p>
+          <figure>
+              <img src="imagenes/evolucion.png" alt="Imagen de la evolución de HTML">
+          </figure>
+          <p class="arriba"><a href="index.html" aria-label="Ir arriba">Ir arriba</a></p>
+        </article>
+
+        <article>
+          <h2>La estructura de HTML</h2>
+          <p><span class="negrita">HTML5</span> es la versión 5 del lenguaje de marcado HTML. Un documento escrito en HTML tiene una estructura básica como la siguiente:</p>
+          <ol>
+              <li>&lt;!DOCTYPE html&gt;</li>
+              <li>&lt;html lang="es"&gt;</li>
+              <li>&lt;head&gt;</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="utf-8"&gt;</li>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;Tutorial de HTML5&lt;title&gt; <br>
+            &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Tutorial de HTML5 &lt;/h1&gt;<br>
+    &lt;/body&gt;<br>
+    &lt;/html&gt;
+</li>
+
+          </ol>
+          <p class="arriba"><a href="index.html" aria-label="Ir arriba">Ir arriba</a></p>
+        </article>
+      </section>
+    </div>
+
+      <aside id="lateral_dch">
+            <section id="buscar" role="search">
+                <h2>Buscar</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="formularioBuscar" id="formularioBuscar" aria-label="Buscar">
+                    <input type="submit" name="enviar" id="enviar" value="Go">
+                </form>
+            </section>
+            <section role="seealso">
+                <h2>Enlaces a videotutoriales</h2>
+                <ul>
+                  <li><a href="#">Introducción a HTML5</a></li>
+                  <li><a href="#">Estructuras básicas de HTML5</a></li>
+                  <li><a href="#">Párrafos en HTML5</a></li>
+                  <li><a href="#">Listas ordenadas y desordenadas</a></li>
+                </ul>
+            </section>
+            <section role="seealso">
+              <h2>Enlaces a páginas Consulta</h2>
+              <ul>
+                <li><a href="#">Estructura del código HTML5</a></li>
+                <li><a href="#">Cómo mostrar etiquetas HTML como texto</a></li>
+                <li><a href="#">W3School</a></li>
+              </ul>
+          </section>
+      </aside>
+    </main>
+    <footer>
+        <p>&copy;Todos los derechos reservados. Realizado por Arancha Cores López</p>
+    </footer>
+  </body>
+</html>
